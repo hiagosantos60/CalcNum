@@ -1,8 +1,8 @@
 f=@(x) x^2+2*x-2;
 
 #primeiro intervalo
-a=0;
-b=1;
+a=0.4;
+b=2;
 
 erro = 1;
 tolerancia = 0.0001;

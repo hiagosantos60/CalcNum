@@ -2,11 +2,11 @@
 % as derivadas em phi_um e phi_dois
 
 % PRIMEIRO CHUTE (Intervalo 0 a 1)
-chute_um = 0.5;
+chute_um = 0.9;
 phi_um = @(x) 2 / (x + 2);
 
 % SEGUNDO CHUTE (Intervalo -3 a -2)
-chute_dois = -2.5;
+chute_dois = -2.9;
 phi_dois = @(x) -sqrt(2 - 2*x); 
 
 erro_um = 1;

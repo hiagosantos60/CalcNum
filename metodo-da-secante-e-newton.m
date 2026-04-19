@@ -5,7 +5,7 @@ f = @(x) x^2 + 2*x - 2;
 df = @(x) 2*x + 2;
 
 % CONFIGURAÇÕES INICIAIS
-% chute entre [0,1], também podemos testar com outro intervalo
+chute entre [0,1], também podemos testar com outro intervalo
 x1 = 0.5; 
 tolerancia = 0.0001;
 erro = 1;
@@ -26,7 +26,7 @@ display(x1);
 
 f = @(x) x^2 + 2*x - 2;
 
-x0 = 0;   % Primeiro chute
+x0 = 0.9;   % Primeiro chute
 x1 = 1;   % Segundo chute
 tolerancia = 0.0001;
 erro = 1;
