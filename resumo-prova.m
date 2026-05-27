@@ -54,11 +54,18 @@ while (erro > tolerancia)
 end
 
 % metodo de jacobi-richardson
-a=[]; %colocar já dividido pela diagonal principla
-b=[]; %colocar já dividido pela diagonal principla
-x0 = [0;0;0]; 
-x1 = b-a*x0; 
-erro = max(abs(x1-x0));
+a=[]; % colocar as matrizes
+b=[]; 
+ %%DIVISÃO DAS MATRIZES PELO ELEMENTO DA DIAGONAL PRINCIPAL 
+[m n]=size(a);
+for i=1:m
+    divisor = a(i,i);
+    b(i,:) = b(i,:)/divisor;
+    a(i,:) = a(i,:)/divisor;
+    a(i,i) = 0;
+end 
+x0 = []; % colocar de acordo com o necessário 
+erro = 1;
 while(erro > 0.01) 
     x1 = b-a*x0;
     erro = max(abs(x1-x0));
